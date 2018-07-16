@@ -11,12 +11,12 @@ spring:
     name: microcloud-config-client-eureka
 
 server:
-  port: 7001
+  port: 1111
 
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:1111/eureka/
+      defaultZone: http://localhost:1111/eureka
     register-with-eureka: false
     fetch-registry: false
   instance:
@@ -29,16 +29,16 @@ spring:
     name: microcloud-config-client-eureka
 
 server:
-  port: 7001
+  port: 1111
 
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:7001/eureka
+      defaultZone: http://localhost:1111/eureka
     register-with-eureka: false
     fetch-registry: false
   instance:
-    hostname: congfig-client-eureka-7001
+    hostname: congfig-client-eureka-1111
     
     
     
