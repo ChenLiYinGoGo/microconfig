@@ -5,7 +5,7 @@ spring:
  
 ---   
 server: 
-  port: 8001
+  port: 8005
   
 eureka:
   client: 
@@ -32,7 +32,7 @@ spring:
     
 ---   
 server: 
-  port: 8002
+  port: 8006
   
 eureka:
   client: 
