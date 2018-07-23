@@ -1,0 +1,50 @@
+spring:
+  profiles:
+    active:
+    - dev
+    
+    
+---
+spring:
+  profiles: dev
+  application:
+    name: microcloud-config-client-eureka
+
+server:
+  port: 1111
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1111/eureka
+    register-with-eureka: false
+    fetch-registry: false
+  instance:
+    hostname: congfig-client-eureka-1111
+    
+---
+spring:
+  profiles: beta
+  application:
+    name: microcloud-config-client-eureka
+
+server:
+  port: 1111
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1111/eureka
+    register-with-eureka: false
+    fetch-registry: false
+  instance:
+    hostname: congfig-client-eureka-1111
+    
+    
+    
+    
+    
+    
+    
+    
+    
