@@ -1,0 +1,67 @@
+spring:
+  profiles:
+    active:
+    - dev
+ 
+---   
+server: 
+  port: 8005
+  
+eureka:
+  client: 
+    service-url:
+      defaultZone: http://localhost:1111/eureka
+  instance:
+    instance-id: account-8001.com  
+    prefer-ip-address: true     
+    
+mybatis:
+  mapper-locations:
+  - classpath:/mybatis/*.xml
+  type-aliases-package: com.oc.kernel.vo
+  
+spring:
+  profiles: dev
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver 
+    url: jdbc:mysql://localhost:3306/springboot
+    username: root
+    password: root
+  application:
+    name: microcloud-config-client-account
+    
+---   
+server: 
+  port: 8006
+  
+eureka:
+  client: 
+    service-url:
+      defaultZone: http://localhost:1111/eureka
+  instance:
+    instance-id: account-8001.com   
+    prefer-ip-address: true     
+    
+mybatis:
+  mapper-locations:
+  - classpath:/mybatis/*.xml
+  type-aliases-package: com.oc.kernel.vo
+  
+spring:
+  profiles: beta
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver 
+    url: jdbc:mysql://localhost:3306/springboot
+    username: root
+    password: root
+  application:
+    name: microcloud-config-client-account
+    
+    
+    
+    
+    
+    
+    
+    
+    
