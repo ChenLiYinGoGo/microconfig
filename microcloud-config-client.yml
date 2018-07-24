@@ -15,9 +15,9 @@ eureka:
     service-url:
       defaultZone: http://localhost:1111/eureka   
 info:
-  app.name: mldn-microcloud-beta-1
+  app.name: mldn-microcloud-beta-0
   company.name: www.mldnjava.cn
-  app.version: v-beta-3.5.2
+  app.version: v-beta-0.5.2
 ---
 server:
   port: 8802
