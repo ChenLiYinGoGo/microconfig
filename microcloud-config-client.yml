@@ -13,7 +13,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:7301/eureka   
+      defaultZone: http://localhost:1111/eureka   
 info:
   app.name: mldn-microcloud-beta-3
   company.name: www.mldnjava.cn
@@ -28,7 +28,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:1111/eureka
+      defaultZone: http://localhost:7301/eureka
 info:
   app.name: mldn-microcloud-beta-3
   company.name: www.mldnjava.cn
